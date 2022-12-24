@@ -1,0 +1,27 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.font-base {
+  font-family: 'Dosis', sans-serif;
+}
+
+@layer utilities {
+  .font-handwritten {
+    font-family: 'Indie Flower', cursive;
+  }
+
+  .bg-dotted-black,
+  .bg-dotted-white {
+    background-size: 75px 75px;
+    background-image: radial-gradient(var(--dotted-bg-color) 1px, transparent 0);
+  }
+
+  .bg-dotted-black {
+    --dotted-bg-color: theme(colors.neutral.300);
+  }
+
+  .bg-dotted-white {
+    --dotted-bg-color: theme(colors.neutral.600);
+  }
+}
