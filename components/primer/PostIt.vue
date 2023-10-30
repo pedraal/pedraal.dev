@@ -23,7 +23,7 @@ const size = sizes[props.size || 'md']
 <template>
   <div class="font-handwritten relative rounded-sm p-4 pt-8 shadow-lg" :class="[variant, size]">
     <div class="absolute inset-x-0 top-0 z-10 h-8 bg-slate-400/10" />
-    <div class="h-full bg-[repeating-linear-gradient(transparent,transparent_25px,rgba(0,0,0,0.03)_26px,rgba(0,0,0,0.03)_27px)] pt-1 leading-[27px]">
+    <div class="h-full bg-[repeating-linear-gradient(transparent,transparent_25px,rgba(0,0,0,0.03)_26px,rgba(0,0,0,0.03)_27px)] pt-1 leading-[27px] text-black">
       <slot />
     </div>
   </div>

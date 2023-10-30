@@ -4,7 +4,7 @@ const { data } = await useAsyncData('home', () => queryContent('/').find())
 
 <template>
   <NuxtLayout>
-    <AppHeader />
+    <HomeHeader />
     <div class="mt-36">
       <section v-for="page in data" :key="page._id" class="my-12">
         <ContentRenderer :value="page">

@@ -2,11 +2,11 @@
 @tailwind components;
 @tailwind utilities;
 
-.font-base {
-  font-family: 'Dosis', sans-serif;
-}
-
 @layer utilities {
+  .font-base {
+    font-family: 'Poppins', sans-serif;
+  }
+
   .font-handwritten {
     font-family: 'Indie Flower', cursive;
   }
