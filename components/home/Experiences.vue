@@ -21,7 +21,8 @@
 
     <AppContentWithSide right>
       <h3 class="h3">Formateur</h3>
-      <p class="italic font-medium mb-4">Juillet - Aout 2020</p>
+      <p class="italic font-medium">Juillet - Aout 2020</p>
+      <p class="italic mb-4">Formateur Vue.js</p>
       <p>En 2020, j'ai été approché par une société de formation qui était à la recherche d'un développeur pour dispenser une formation d'initiation au framework Vue.js à une agence lyonnaise. J'étais content de pouvoir partager mon grand intérêt pour ce framework, mais après cette première expérience en tant que formateur, j'avoue n'avoir pas particulièrement apprécié l'exercice et je ne souhaite pas à ce jour recommencer.</p>
       <template #side>
         <AppPostit variant="green" class="mt-4 -rotate-6">

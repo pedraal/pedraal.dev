@@ -8,12 +8,10 @@ useHead({
 </script>
 
 <template>
-  <NuxtLayout>
-    <HomeHeader />
-    <div class="mt-36 flex flex-col gap-16">
-      <HomeAbout />
-      <HomeStacks />
-      <HomeExperiences />
-    </div>
-  </NuxtLayout>
+  <HomeHeader />
+  <div class="mt-36 flex flex-col gap-16">
+    <HomeAbout />
+    <HomeStacks />
+    <HomeExperiences />
+  </div>
 </template>

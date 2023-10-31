@@ -44,9 +44,10 @@
         <Icon size="1.5rem" name="logos:deno"></Icon>
         <Icon size="1.5rem" name="logos:tailwindcss-icon"></Icon>
       </template>
-      <strong>Deno</strong> : Deno est un nouveau runtime qui remplace Node.js. Créé par le même auteur, il offre de nombreux avantages tels que TypeScript par défaut, un test-runner et linter intégrés, ainsi qu'un système de modules plus simple que NPM.
+      <strong>Deno</strong> : Deno est un runtime JavaScript qui remplace Node.js. Créé par le même auteur, il offre de nombreux avantages tels que TypeScript par défaut, un test-runner et linter intégrés, ainsi qu'un système de modules plus simple que NPM.
       <br>
-      <strong>Tailwind CSS</strong> : Pour citer son créateur : "It looks awful, and it works." Après avoir maîtrisé ce framework CSS, je ne peux que confirmer. Malgré son aspect très verbeux qui vient alourdir notre HTML, il permet cependant de créer des interfaces rapidement qui sont simple à maintenir. Je n'imagine plus réaliser un projet sans lui.
+      <br>
+      <strong>Tailwind CSS</strong> : Pour citer son créateur : "It looks awful, and it works." Après avoir maîtrisé ce framework CSS, je ne peux que confirmer. Malgré son aspect très verbeux qui vient alourdir notre HTML, il permet cependant de créer rapidement des interfaces simple à maintenir. Je n'imagine plus réaliser un projet sans lui.
 
     </AppCard>
   </section>
