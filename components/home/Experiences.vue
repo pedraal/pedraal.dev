@@ -34,6 +34,10 @@
 
     <AppContentWithSide>
       <h3 class="h3">Le maitre des fleurs</h3>
+      <AppExternalLink href="https://maitre-des-fleurs.com">
+        Voir le site
+        <Icon class="-mt-1" size="1.5rem" name="heroicons:arrow-top-right-on-square"></Icon>
+      </AppExternalLink>
       <p class="italic font-medium">Novembre 2020 - Aujourd'hui</p>
       <p class="italic mb-4">CTO (si je voulais me la raconter)</p>
       <p>Le Maître des Fleurs est un quiz de culture générale multijoueur. Il se joue jusqu'à 4000 joueurs simultanément. Les joueurs commencent avec 3 vies, à chaque question, ceux qui se trompent perdent une vie. Le but est d'être le dernier survivant !</p>
@@ -55,6 +59,10 @@
 
     <AppContentWithSide right>
       <h3 class="h3">Twitchbuddy</h3>
+      <AppExternalLink href="https://twitchbuddy.app">
+        Voir le site
+        <Icon class="-mt-1" size="1.5rem" name="heroicons:arrow-top-right-on-square"></Icon>
+      </AppExternalLink>
       <p class="italic font-medium">Avril 2020 - Aujourd'hui</p>
       <p class="italic mb-4">Projet personnel</p>
       <p>En 2019, j'ai lancé ma première application web : Handyclip. Une application qui permettait de chercher et télécharger facilement des extraits vidéos de la plateforme <a class="underline" href="https://twitch.tv" target="_blank">Twitch.tv</a>. En avril 2020, j'ai décidé de réécrire l'application avec d'autres technologies, notamment Nuxt.js, en y ajoutant des fonctionnalités.</p>

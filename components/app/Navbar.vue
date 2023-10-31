@@ -32,7 +32,7 @@ const links = [
     <div class="flex items-center gap-3">
       <AppColorModeSwitch />
       <span>|</span>
-      <AppExternalLink v-for="link in links" :key="link.href" :href="link.href" target="_blank">
+      <AppExternalLink v-for="link in links" :key="link.href" :href="link.href">
         <Icon :name="link.icon" class="h-5 w-5" />
       </AppExternalLink>
     </div>
