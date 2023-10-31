@@ -33,6 +33,7 @@ export default defineNuxtConfig({
   },
   app: {
     head: {
+      htmlAttrs: { lang: 'fr' },
       title: 'Pierre Golfier',
       link: [
         { rel: 'icon', href: '/favicon.ico', sizes: 'any' },
