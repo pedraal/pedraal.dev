@@ -67,7 +67,7 @@
       <p class="italic mb-4">Projet personnel</p>
       <p>En 2019, j'ai lancé ma première application web : Handyclip. Une application qui permettait de chercher et télécharger facilement des extraits vidéos de la plateforme <a class="underline" href="https://twitch.tv" target="_blank">Twitch.tv</a>. En avril 2020, j'ai décidé de réécrire l'application avec d'autres technologies, notamment Nuxt.js, en y ajoutant des fonctionnalités.</p>
       <br>
-      <p>En octobre 2023, j'ai décidé de reprendre le projet en commençant par une réécriture ("nan mais c'est pas vrai, c'est une maladie à ce niveau !", oui.) et avec l'ambition de proposer une version payante afin de couvrir les frais d'hébergement et de pouvoir consacrer du temps au développement de nouvelles fonctionnalités.</p>
+      <p>En octobre 2023, j'ai décidé de reprendre le projet en commençant par une réécriture ("ENCORE ? nan mais c'est pas vrai, c'est une maladie!", oui.) et avec l'ambition de proposer une version payante afin de couvrir les frais d'hébergement et de pouvoir consacrer du temps au développement de nouvelles fonctionnalités.</p>
       <br>
       <p>Pour ce renouveau de mon application, je vais également me plonger pour la première fois dans l'optimisation pour les moteurs de recherche (SEO) afin d'améliorer sa visibilité et ainsi augmenter sa base d'utilisateurs, qui était très limitée depuis sa première version.</p>
       <template #side>
