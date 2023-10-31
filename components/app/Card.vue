@@ -8,6 +8,8 @@
         <slot name="header-icons" />
       </div>
     </div>
-    <slot />
+    <div class="text-sm">
+      <slot />
+    </div>
   </div>
 </template>

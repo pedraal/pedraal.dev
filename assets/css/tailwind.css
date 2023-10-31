@@ -24,4 +24,16 @@
   .bg-dotted-white {
     --dotted-bg-color: theme(colors.neutral.600);
   }
+
+  .base-h {
+    @apply font-handwritten font-semibold underline decoration-indigo-600 decoration-wavy underline-offset-8;
+  }
+
+  .h2 {
+    @apply base-h mb-6 text-3xl;
+  }
+
+  .h3 {
+    @apply base-h mb-4 text-2xl;
+  }
 }
