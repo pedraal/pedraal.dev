@@ -1,5 +1,5 @@
 version: "3.8"
-
+name: pedraal-dev
 services:
   app:
     container_name: pedraal_dev_${APP_ENV}
