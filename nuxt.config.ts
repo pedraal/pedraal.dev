@@ -4,11 +4,32 @@ export default defineNuxtConfig({
     '@nuxtjs/color-mode',
     '@nuxtjs/tailwindcss',
     'nuxt-icon',
+    '@nuxtjs/plausible',
     '@nuxt/content',
+    'nuxt-simple-sitemap',
+    'nuxt-delay-hydration',
   ],
   components: {
     global: true,
     dirs: ['~/components'],
+  },
+  plausible: {
+    trackLocalhost: true,
+    domain: process.env.DEV ? 'pedraaldev.local' : process.env.APP_DOMAIN,
+    apiHost: 'https://plausible.pedraal.fr',
+  },
+  site: {
+    url: process.env.APP_ORIGIN,
+  },
+  sitemap: {
+    strictNuxtContentPaths: true,
+    exclude: [
+      '/admin/**',
+    ],
+  },
+  delayHydration: {
+    debug: !!process.env.DEV,
+    mode: 'mount',
   },
   app: {
     head: {
@@ -29,6 +50,12 @@ export default defineNuxtConfig({
       },
     },
   },
+  devtools: {
+    enabled: true,
+    timeline: {
+      enabled: true,
+    },
+  },
   colorMode: {
     preference: 'system', // default value of $colorMode.preference
     fallback: 'light', // fallback value if not system preference found
@@ -39,7 +66,11 @@ export default defineNuxtConfig({
     classSuffix: '',
     storageKey: 'nuxt-color-mode',
   },
-  content: {
-    documentDriven: true,
+
+  runtimeConfig: {
+    appOrigin: process.env.APP_ORIGIN || 'http://localhost:3000',
+    public: {
+      appDomain: process.env.APP_DOMAIN || 'localhost:3000',
+    },
   },
 })
