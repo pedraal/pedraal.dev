@@ -13,7 +13,7 @@
     </div>
     <div class="flex justify-center">
       <div class="relative">
-        <img src="/images/avatar.png" alt="Pierre Golfier" width="400" height="400">
+        <NuxtImg src="/avatar.png" alt="Pierre Golfier" width="400" height="400" />
         <div class="absolute top-0 right-full translate-x-full sm:translate-x-1/2">
           <p class="font-handwritten whitespace-nowrap">
             C'est moi, vite fait
@@ -21,9 +21,9 @@
           <AppArrowSvg class="fill-primary h-20 w-20 translate-x-1/2 rotate-90" />
         </div>
         <div class="absolute top-0 right-0 translate-x-1/2">
-          <AppPostit variant="blue" class="mt-6 -rotate-3 ">
+          <AppPostit variant="blue" class="mt-6 -rotate-3 max-md:hidden">
             <p>Liste de courses&nbsp;:</p>
-            <ul class="list-inside list-disc">
+            <ul class="list-inside list-disc max-md:text-sm">
               <li>Café</li>
               <li>Nouilles</li>
               <li>Café</li>
@@ -34,7 +34,7 @@
         <div class="absolute inset-x-0 top-3/4 mt-4 flex justify-center gap-6">
           <AppPostit variant="green" class="mt-4 -rotate-3">
             <p>Matos&nbsp;:</p>
-            <ul class="list-inside list-disc">
+            <ul class="list-inside list-disc max-md:text-sm">
               <li>Macbook Air M1</li>
               <li>Clavier souris Logitech MX</li>
               <li>Écran LG 34" 21:9</li>
@@ -42,7 +42,7 @@
           </AppPostit>
           <AppPostit variant="pink" class="rotate-6">
             <p>Hobbies&nbsp;:</p>
-            <ul class="list-inside list-disc">
+            <ul class="list-inside list-disc max-md:text-sm">
               <li>Gaming</li>
               <li>Cuisine</li>
               <li>Développement</li>

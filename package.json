@@ -23,6 +23,7 @@
     "typescript": "^5.2.2"
   },
   "dependencies": {
+    "@nuxt/image": "^1.0.0",
     "@nuxtjs/plausible": "^0.2.3",
     "nuxt-delay-hydration": "^1.2.3",
     "nuxt-simple-sitemap": "^3.4.1"

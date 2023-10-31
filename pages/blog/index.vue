@@ -15,11 +15,11 @@ useHead({
       <AppCard v-for="article in list" :key="article._path">
         <template #header-title>
           <h2>{{ article.title }}</h2>
-          <p class="text-base">Publié le {{ article.publishedAt }}</p>
         </template>
         <template #header-icons>
           <Icon size="1.5rem" :name="article.icon"></Icon>
         </template>
+        <p class="font-handwritten text-lg">Publié le {{ article.publishedAt }}</p>
         <p class="mb-4">{{ article.description }}</p>
         <NuxtLink :to="article._path" class="underline">Lire l'article</NuxtLink>
       </AppCard>

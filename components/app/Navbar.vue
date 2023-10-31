@@ -25,7 +25,7 @@ const links = [
         <span class="font-handwritten inline-block -rotate-12 text-6xl">pg</span>
       </NuxtLink>
       <div class="flex gap-2 items-center">
-        <AppNavlink path="/">Accueil</AppNavlink>
+        <AppNavlink path="/" class="max-md:hidden">Accueil</AppNavlink>
         <AppNavlink path="/blog">Blog</AppNavlink>
       </div>
     </div>
