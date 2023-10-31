@@ -1,0 +1,32 @@
+version: "3.8"
+
+services:
+  app:
+    container_name: pedraal_dev_${APP_ENV}
+    build:
+      context: .
+    env_file: .env
+    expose:
+      - 3000
+    networks:
+      - proxy
+      - datastore-network
+    labels:
+      - traefik.enable=true
+      - traefik.http.services.pedraal-dev-${APP_ENV}.loadbalancer.server.port=3000
+
+      - traefik.http.routers.pedraal-dev-${APP_ENV}.service=pedraal-dev-${APP_ENV}@docker
+      - traefik.http.routers.pedraal-dev-${APP_ENV}.rule=Host(`${APP_DOMAIN}`)
+      - traefik.http.routers.pedraal-dev-${APP_ENV}.entrypoints=web
+      - traefik.http.routers.pedraal-dev-${APP_ENV}.middlewares=redirect-https
+
+      - traefik.http.routers.pedraal-dev-${APP_ENV}-secured.service=pedraal-dev-${APP_ENV}@docker
+      - traefik.http.routers.pedraal-dev-${APP_ENV}-secured.entrypoints=web-secured
+      - traefik.http.routers.pedraal-dev-${APP_ENV}-secured.tls=true
+      - traefik.http.routers.pedraal-dev-${APP_ENV}-secured.rule=Host(`${APP_DOMAIN}`)
+
+networks:
+  proxy:
+    external: true
+  datastore-network:
+    external: true
