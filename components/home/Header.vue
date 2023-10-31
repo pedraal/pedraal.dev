@@ -13,7 +13,8 @@
     </div>
     <div class="flex justify-center">
       <div class="relative">
-        <NuxtImg src="/avatar.png" alt="Pierre Golfier" width="400" height="400" />
+        <!-- <NuxtImg src="/avatar.png" alt="Pierre Golfier" width="400" height="400" /> -->
+        <img src="~/assets/images/avatar.png" alt="Pierre Golfier" width="400" height="400" />
         <div class="absolute top-0 right-full translate-x-full sm:translate-x-1/2">
           <p class="font-handwritten whitespace-nowrap">
             C'est moi, vite fait
