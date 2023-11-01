@@ -8,7 +8,7 @@ export default defineNuxtConfig({
     '@nuxt/content',
     'nuxt-simple-sitemap',
     'nuxt-delay-hydration',
-    // '@nuxt/image',
+    '@nuxt/image',
   ],
   components: {
     global: true,
@@ -19,9 +19,7 @@ export default defineNuxtConfig({
     domain: process.env.DEV ? 'pedraaldev.local' : process.env.APP_DOMAIN,
     apiHost: 'https://plausible.pedraal.fr',
   },
-  // image: {
-  //   dir: 'assets/images'
-  // },
+  image: {},
   site: {
     url: process.env.APP_ORIGIN,
   },
