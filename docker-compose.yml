@@ -24,6 +24,8 @@ services:
       - traefik.http.routers.pedraal-dev-${APP_ENV}-secured.tls=true
       - traefik.http.routers.pedraal-dev-${APP_ENV}-secured.rule=Host(`${APP_DOMAIN}`)
 
+      - ${BASIC_AUTH_LABEL}
+
 networks:
   proxy:
     external: true
