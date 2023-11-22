@@ -21,7 +21,7 @@
           <Icon size="1.5rem" name="vscode-icons:file-type-rails"></Icon>
           <Icon size="1.5rem" name="logos:postgresql"></Icon>
         </template>
-        <p>En travaillant chez Codeur.com, j'ai eu l'opportunité de me former à Ruby on Rails. Lors de l'annonce de Hotwired, nous avons immédiatement adhéré à cette nouvelle approche du développement d'applications web et l'avons intégrée à notre stack technique.</p>
+        <p>En travaillant chez Codeur.com, j'ai eu l'opportunité d'apprendre et maitriser Ruby on Rails. Lors de l'annonce de Hotwired, nous avons immédiatement adhéré à cette nouvelle approche du développement d'applications web et l'avons intégrée à notre stack technique.</p>
       </AppCard>
     </div>
 
@@ -33,7 +33,7 @@
         <Icon size="1.5rem" name="logos:docker-icon"></Icon>
         <Icon size="1.5rem" name="simple-icons:traefikproxy"></Icon>
       </template>
-      <p>Pour déployer mes applications, je me suis formé à l'utilisation de Docker. J'utilise principalement le reverse proxy Traefik et je gère moi-même mes serveurs dédiés.</p>
+      <p>Pour déployer mes applications, je me suis formé à Docker. J'utilise principalement le reverse proxy Traefik et je gère moi-même mes serveurs dédiés.</p>
     </AppCard>
 
     <AppCard>
@@ -47,7 +47,7 @@
       <strong>Deno</strong> : Deno est un runtime JavaScript qui remplace Node.js. Créé par le même auteur, il offre de nombreux avantages tels que TypeScript par défaut, un test-runner et linter intégrés, ainsi qu'un système de modules plus simple que NPM.
       <br>
       <br>
-      <strong>Tailwind CSS</strong> : Pour citer son créateur : "It looks awful, and it works." Après avoir maîtrisé ce framework CSS, je ne peux que confirmer. Malgré son aspect très verbeux qui vient alourdir notre HTML, il permet cependant de créer rapidement des interfaces simple à maintenir. Je n'imagine plus réaliser un projet sans lui.
+      <strong>Tailwind CSS</strong> : Pour citer son créateur : "It looks awful, and it works." Après avoir maîtrisé ce framework CSS, je ne peux que confirmer. Malgré son aspect très verbeux, il permet cependant de créer rapidement des interfaces simple à maintenir.
 
     </AppCard>
   </section>
