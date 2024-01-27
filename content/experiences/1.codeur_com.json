@@ -1,0 +1,10 @@
+{
+  "title": "Codeur.com",
+  "color": "blue",
+  "date": "Décembre 2019 - Maintenant",
+  "role": "Développeur Ruby on Rails",
+  "stack": "Ruby on Rails, Vue.js, Hotwired, Postgresql",
+  "summary": "En charge du développement et de la maintenance des plateformes de l'entreprise Codeur SAS au sein d'une équipe de 3 développeurs",
+  "description": "<p>En décembre 2019, je rejoins l'entreprise Codeur me permettant de me former au développement Ruby on Rails.</p><p>Mes missions au sein de l'entreprise aujourd'hui consistent à maintenir et développer de nouvelles fonctionnalités sur <a class=\"underline\" href=\"https://codeur.com\">Codeur.com</a>, <a class=\"underline\" href=\"https://graphiste.com\">Graphiste.com</a>, <a class=\"underline\" href=\"https://redacteur.com\">Rédacteur.com</a>, <a class=\"underline\" href=\"https://traduc.com\">Traduc.com</a> et <a class=\"underline\" href=\"https://facture.net\">Facture.net</a>.</p>",
+  "card": "Codeur.com<br><br>Développeur fullstack Ruby on Rails"
+}

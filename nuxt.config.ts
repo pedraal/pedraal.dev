@@ -8,6 +8,7 @@ export default defineNuxtConfig({
     '@nuxt/content',
     'nuxt-simple-sitemap',
     'nuxt-delay-hydration',
+    '@sidebase/nuxt-pdf',
     // '@nuxt/image',
   ],
   components: {
@@ -28,7 +29,7 @@ export default defineNuxtConfig({
   sitemap: {
     strictNuxtContentPaths: true,
     exclude: [
-      '/admin/**',
+      '/resume_html',
     ],
   },
   delayHydration: {
@@ -70,8 +71,13 @@ export default defineNuxtConfig({
 
   runtimeConfig: {
     appOrigin: process.env.APP_ORIGIN || 'http://localhost:3000',
+    chromePath: process.env.CHROME_PATH || undefined,
     public: {
       appDomain: process.env.APP_DOMAIN || 'localhost:3000',
+      email: 'pro@pedraal.dev',
+      phone: '06 51 62 31 35',
+      github: 'https://github.com/pedraal',
+      linkedin: 'https://www.linkedin.com/in/pierre-golfier-9aa804109/'
     },
   },
 })

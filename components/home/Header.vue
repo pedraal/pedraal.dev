@@ -34,10 +34,10 @@
         </div>
         <div class="absolute inset-x-0 top-3/4 mt-4 flex justify-center gap-6">
           <AppPostit variant="green" class="mt-4 -rotate-3">
-            <p>Matos&nbsp;:</p>
+            <p>Gear&nbsp;:</p>
             <ul class="list-inside list-disc max-md:text-sm">
               <li>Macbook Air M1</li>
-              <li>Clavier souris Logitech MX</li>
+              <li>Logitech MX</li>
               <li>Écran LG 34" 21:9</li>
             </ul>
           </AppPostit>
@@ -47,7 +47,6 @@
               <li>Gaming</li>
               <li>Cuisine</li>
               <li>Développement</li>
-              <li>Sport</li>
             </ul>
           </AppPostit>
         </div>

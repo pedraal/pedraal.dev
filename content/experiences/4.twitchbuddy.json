@@ -1,0 +1,11 @@
+{
+  "title": "Twitchbuddy.app",
+  "color": "indigo",
+  "date": "Avril 2020 - Aujourd'hui",
+  "link": "https://twitchbuddy.app",
+  "role": "Projet personnel",
+  "stack": "Nuxt.js 3, Typescript, Tailwind, Mongodb",
+  "summary": "Développement d'une application web permettant de consulter et télécharger des extraits vidéos provenant de la plateforme Twitch.tv",
+  "description": "<p>En 2019, j'ai lancé ma première application web : Handyclip. Une application qui permettait de chercher et télécharger facilement des extraits vidéos de la plateforme <a class=\"underline\" href=\"https://twitch.tv\" target=\"_blank\">Twitch.tv</a>. En avril 2020, j'ai décidé de réécrire l'application avec d'autres technologies, notamment Nuxt.js, en y ajoutant des fonctionnalités.</p><br><p>En octobre 2023, j'ai décidé de reprendre le projet en commençant par une refonte totale et avec l'ambition de proposer une version payante afin de couvrir les frais d'hébergement et de pouvoir consacrer du temps au développement de nouvelles fonctionnalités.</p><br><p>Ce projet est basé sur Nuxt.js, Tailwind et Mongodb.</p>",
+  "card": "Twitchbuddy<br><br>Projet perso"
+}

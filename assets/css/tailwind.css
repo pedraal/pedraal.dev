@@ -2,6 +2,31 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer base {
+  html.printable #nuxt-devtools-anchor {
+    display: none;
+  }
+
+  html.printable {
+    margin: 0;
+    padding: 0;
+    print-color-adjust: exact;
+    background-color: theme('colors.zinc.100');
+  }
+
+  @media (prefers-color-scheme: dark) {
+    html.printable {
+      background-color: theme('colors.zinc.900');
+    }
+  }
+
+  @page {
+    size: A4;
+    margin: 0;
+    -webkit-margin: 0;
+  }
+}
+
 @layer utilities {
   .font-base {
     font-family: 'Poppins', sans-serif;
