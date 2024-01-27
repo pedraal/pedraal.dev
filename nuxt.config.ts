@@ -71,6 +71,7 @@ export default defineNuxtConfig({
 
   runtimeConfig: {
     appOrigin: process.env.APP_ORIGIN || 'http://localhost:3000',
+    chromePath: process.env.CHROME_PATH || undefined,
     public: {
       appDomain: process.env.APP_DOMAIN || 'localhost:3000',
       email: 'pro@pedraal.dev',

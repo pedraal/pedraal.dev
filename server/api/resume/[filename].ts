@@ -2,14 +2,14 @@ import puppeteer from "puppeteer"
 
 export default defineCachedEventHandler(async (event) => {
   const query = getQuery(event)
+  const config = useRuntimeConfig()
 
-  const browser = await puppeteer.launch({ headless: 'new' })
+  const browser = await puppeteer.launch({ headless: 'new', executablePath: config.chromePath })
   const page = await browser.newPage()
   if (query.theme === 'dark')
     await page.emulateMediaFeatures([
       { name: 'prefers-color-scheme', value: 'dark' },
     ])
-  const config = useRuntimeConfig()
   await page.goto(`${config.appOrigin}/resume_html?theme=${query.theme}`, { waitUntil: 'networkidle0' })
   const pdf = await page.pdf({ format: 'A4', preferCSSPageSize: true })
   await browser.close()
