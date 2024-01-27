@@ -1,0 +1,11 @@
+{
+  "title": "\"Le maitre des fleurs\"",
+  "color": "pink",
+  "date": "Novembre 2020 - Aujourd'hui",
+  "link": "https://maitre-des-fleurs.com",
+  "role": "Développeur full-stack et devops",
+  "stack": "Vue.js 3, Nuxt.js 2, Tailwind, Node.js, Typescript, Mongodb",
+  "summary": "En charge du développement et du support d'une application web de quizz multijoueurs en temps réel et de son infrastructure",
+  "description": "<p>Le Maître des Fleurs est un quiz de culture générale multijoueurs. Il se joue jusqu'à 4000 joueurs simultanément. Les joueurs commencent avec 3 vies, à chaque question, ceux qui se trompent perdent une vie. Le but est d'être le dernier survivant !</p><br><p>Depuis 2020, je collabore avec le streameur <a class=\"underline\" href=\"https://twitch.tv/ponce\">Ponce</a> et Céline, sa cheffe de projet, afin de développer un outil permettant d'animer une émission à la manière d'un jeu télévisé. J'étais à l'origine la seule personne impliquée dans la réalisation du projet, puis au fil du temps, j'ai été rejoint par <a class=\"underline\" href=\"https://twitter.com/BastiUi\">BastiUi</a> pour le design UI/UX et <a class=\"underline\" href=\"https://twitter.com/grafikart_fr\">Grafikart</a> en renfort sur le développement.</p><br><p>Pour ce projet, j'ai utilisé une stack technique composée de Vue.js, Tailwind, Node.js, Typescript, Express, Mongodb et Socket.io </p>",
+  "card": "PonceCorp<br><br>Le maitre des fleurs"
+}

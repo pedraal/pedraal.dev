@@ -1,31 +1,34 @@
 <script lang="ts" setup>
+const config = useRuntimeConfig()
+
 const links = [
   {
     icon: 'carbon:logo-linkedin',
     label: 'LinkedIn',
-    href: 'https://www.linkedin.com/in/pierre-golfier-9aa804109/'
+    href: config.public.linkedin
   },
   {
     icon: 'carbon:logo-github',
     label: 'GitHub',
-    href: 'https://github.com/pedraal'
+    href: config.public.github
   },
   {
     icon: 'carbon:at',
     label: 'Email',
-    href: 'mailto:pro@pedraal.fr'
+    href: 'mailto:' + config.public.email
   }
 ]
 </script>
 
 <template>
-  <nav class="flex justify-between">
+  <nav class="flex justify-between" id="navbar">
     <div class="flex items-center gap-8">
       <NuxtLink to="/" class="font-handwritten hover:text-primary -mt-4 text-3xl transition-colors">
         <span class="font-handwritten inline-block -rotate-12 text-6xl">pg</span>
       </NuxtLink>
       <div class="flex gap-2 items-center">
         <AppNavlink path="/" class="max-md:hidden">Accueil</AppNavlink>
+        <AppNavlink path="/resume">CV</AppNavlink>
         <AppNavlink path="/blog">Blog</AppNavlink>
       </div>
     </div>
