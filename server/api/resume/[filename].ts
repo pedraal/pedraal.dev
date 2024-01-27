@@ -4,7 +4,11 @@ export default defineCachedEventHandler(async (event) => {
   const query = getQuery(event)
   const config = useRuntimeConfig()
 
-  const browser = await puppeteer.launch({ headless: 'new', executablePath: config.chromePath })
+  const browser = await puppeteer.launch({
+    headless: 'new',
+    executablePath: config.chromePath,
+    args: config.chromePath ? ['--no-sandbox', '--disable-setuid-sandbox'] : [],
+  })
   const page = await browser.newPage()
   if (query.theme === 'dark')
     await page.emulateMediaFeatures([
