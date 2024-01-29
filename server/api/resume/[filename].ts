@@ -1,27 +1,10 @@
-import puppeteer from "puppeteer"
-
-export default defineCachedEventHandler(async (event) => {
-  const query = getQuery(event)
+export default defineEventHandler(async (event) => {
   const config = useRuntimeConfig()
-
-  const browser = await puppeteer.launch({
-    headless: 'new',
-    executablePath: config.chromePath,
-    args: config.chromePath ? ['--no-sandbox', '--disable-setuid-sandbox'] : [],
-  })
-  const page = await browser.newPage()
-  if (query.theme === 'dark')
-    await page.emulateMediaFeatures([
-      { name: 'prefers-color-scheme', value: 'dark' },
-    ])
-  await page.goto(`${config.appOrigin}/resume_html?theme=${query.theme}`, { waitUntil: 'networkidle0' })
-  const pdf = await page.pdf({ format: 'A4', preferCSSPageSize: true })
-  await browser.close()
-
+  const query = getQuery(event)
   setResponseHeader(event, 'Content-Type', 'application/pdf')
   setResponseHeader(event, 'Content-Disposition', 'inline; filename="cv-pierre-golfier.pdf"')
 
-  return pdf
-}, {
-  maxAge: 60 * 60 * 24 * 7 * 365,
+  const pdf = await cachedPrintPdf(`${config.appOrigin}/resume_html`, query.theme === 'dark')
+
+  return Buffer.from(pdf)
 })

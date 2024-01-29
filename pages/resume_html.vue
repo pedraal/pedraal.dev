@@ -9,12 +9,6 @@ definePageMeta({
   layout: false
 })
 
-const route = useRoute()
-const colorMode = useColorMode()
-if (route.query.theme === 'dark') {
-  colorMode.value = route.query.theme
-}
-
 const config = useRuntimeConfig()
 </script>
 
