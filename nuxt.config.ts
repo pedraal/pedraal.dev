@@ -18,7 +18,7 @@ export default defineNuxtConfig({
   plausible: {
     trackLocalhost: true,
     domain: process.env.DEV ? 'pedraaldev.local' : process.env.APP_DOMAIN,
-    apiHost: 'https://plausible.pedraal.fr',
+    apiHost: 'https://plausible.pedraal.dev',
   },
   // image: {
   //   dir: 'assets/images'
