@@ -11,10 +11,12 @@ useHead({
   <h1 class="h2">Mon blog</h1>
   <p class="mb-8">Retrouvez ici tous mes articles parlant de développement web ou nouvelles technologies</p>
   <main>
-    <ContentList path="/blog" v-slot="{ list }">
-      <AppCard v-for="article in list" :key="article._path">
+    <ContentList :query="{ path: '/blog', sort: [{ publishedAt: -1 }] }" v-slot="{ list }">
+      <AppCard v-for="article in list" :key="article._path" class="my-2">
         <template #header-title>
-          <h2>{{ article.title }}</h2>
+          <NuxtLink :to="article._path">
+            <h2>{{ article.title }}</h2>
+          </NuxtLink>
         </template>
         <template #header-icons>
           <Icon size="1.5rem" :name="article.icon"></Icon>

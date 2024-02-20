@@ -70,7 +70,7 @@ const config = useRuntimeConfig()
               </ResumeSidebarBlock>
 
               <div class="grow flex items-end justify-center">
-                <p class="text-xs text-gray-500 dark:text-gray-400">CV généré depuis mon site en Nuxt.js</p>
+                <p class="text-xs text-gray-500 dark:text-gray-400">CV généré depuis mon site Nuxt</p>
               </div>
             </div>
           </div>

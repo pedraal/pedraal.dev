@@ -8,7 +8,7 @@ export default defineNuxtConfig({
     '@nuxt/content',
     'nuxt-simple-sitemap',
     'nuxt-delay-hydration',
-    '@sidebase/nuxt-pdf',
+    '@vueuse/nuxt',
     // '@nuxt/image',
   ],
   components: {
@@ -50,6 +50,11 @@ export default defineNuxtConfig({
       bodyAttrs: {
         class: process.env.NODE_ENV === 'development' ? 'debug-screens' : '',
       },
+    },
+  },
+  content: {
+    highlight: {
+      theme: 'github-dark',
     },
   },
   devtools: {
