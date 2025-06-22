@@ -8,10 +8,12 @@ useHead({
 </script>
 
 <template>
-  <HomeHeader />
-  <div class="mt-36 flex flex-col gap-16">
-    <HomeAbout />
-    <HomeStacks />
-    <HomeExperiences />
+  <div>
+    <HomeHeader />
+    <div class="mt-36 flex flex-col gap-16">
+      <HomeAbout />
+      <HomeStacks />
+      <HomeExperiences />
+    </div>
   </div>
 </template>

@@ -82,15 +82,24 @@ const languageIcon = computed(() => {
   <div>
     <div class="bg-gray-900 flex gap-4 items-center justify-between rounded-t-lg py-2 px-4">
       <div class="flex items-center gap-2 text-white font-light text-sm">
-        <Icon :name="languageIcon" class="w-5 h-5" />
+        <Icon
+          :name="languageIcon"
+          class="w-5 h-5"
+        />
         <span class="">{{ filename }}</span>
       </div>
       <ClientOnly>
-        <button v-if="isSupported" @click="copy(code)">
-          <Icon :name="copied ? 'i-heroicons-check-circle' : 'i-heroicons-clipboard-document-list'"></Icon>
+        <button
+          v-if="isSupported"
+          @click="copy(code)"
+        >
+          <Icon :name="copied ? 'i-heroicons-check-circle' : 'i-heroicons-clipboard-document-list'" />
         </button>
       </ClientOnly>
     </div>
-    <pre :class="$props.class" class="bg-gray-800 rounded-t-none rounded-b-lg mt-0"><slot /></pre>
+    <pre
+      :class="$props.class"
+      class="bg-gray-800 rounded-t-none rounded-b-lg mt-0"
+    ><slot /></pre>
   </div>
 </template>

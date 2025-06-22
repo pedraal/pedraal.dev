@@ -2,22 +2,5 @@
   "title": "Auto-formation au développement web",
   "school": "Udemy",
   "date": "2018 - 2019",
-  "summary": [
-    [
-      "Formation Complète Développeur Web",
-      "https://www.udemy.com/course/formation-developpeur-web/"
-    ],
-    [
-      "JavaScript: Understanding the Weird Parts",
-      "https://www.udemy.com/course/understand-javascript/"
-    ],
-    [
-      "Vue JS 2 - The Complete Guide",
-      "https://www.udemy.com/course/vuejs-2-the-complete-guide/"
-    ],
-    [
-      "The Complete Node.js Developer Course",
-      "https://www.udemy.com/course/the-complete-nodejs-developer-course-2/"
-    ]
-  ]
+  "summary": "Différents parcours de formation en autonomie allant de la formation généraliste à des formations spécialisées en Vue.js et Node.js."
 }

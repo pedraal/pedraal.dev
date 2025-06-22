@@ -1,10 +1,11 @@
-import puppeteer from "puppeteer"
+import puppeteer from 'puppeteer'
 
-export const cachedPrintPdf = defineCachedFunction(async (path: string, dark: boolean) => {
+export const printPdf = async (dark: boolean) => {
   const config = useRuntimeConfig()
+  const event = useEvent()
 
   const browser = await puppeteer.launch({
-    headless: 'new',
+    headless: true,
     executablePath: config.chromePath,
     args: [
       '--disable-features=IsolateOrigins',
@@ -43,7 +44,7 @@ export const cachedPrintPdf = defineCachedFunction(async (path: string, dark: bo
       '--no-zygote',
       '--password-store=basic',
       '--use-gl=swiftshader',
-      '--use-mock-keychain'
+      '--use-mock-keychain',
     ],
   })
   const page = await browser.newPage()
@@ -51,12 +52,9 @@ export const cachedPrintPdf = defineCachedFunction(async (path: string, dark: bo
     await page.emulateMediaFeatures([
       { name: 'prefers-color-scheme', value: 'dark' },
     ])
-  await page.goto(`${config.appOrigin}/resume_html`, { waitUntil: 'networkidle0' })
+  await page.goto(`${getRequestURL(event).origin}/resume_html`, { waitUntil: 'networkidle0' })
   const pdf = await page.pdf({ format: 'A4', preferCSSPageSize: true })
   await browser.close()
 
   return pdf
-}, {
-  maxAge: 60 * 60 * 24 * 7 * 365,
-  getKey: (path: string, dark: boolean) => path + '-' + dark,
-})
+}

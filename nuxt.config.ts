@@ -1,40 +1,21 @@
-// https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
   modules: [
+    '@nuxt/content',
+    '@nuxt/eslint',
+    '@nuxt/icon',
     '@nuxtjs/color-mode',
     '@nuxtjs/tailwindcss',
-    'nuxt-icon',
-    '@nuxtjs/plausible',
-    '@nuxt/content',
-    'nuxt-simple-sitemap',
-    'nuxt-delay-hydration',
     '@vueuse/nuxt',
-    // '@nuxt/image',
   ],
   components: {
     global: true,
     dirs: ['~/components'],
   },
-  plausible: {
-    trackLocalhost: true,
-    domain: process.env.DEV ? 'pedraaldev.local' : process.env.APP_DOMAIN,
-    apiHost: 'https://plausible.pedraal.dev',
-  },
-  // image: {
-  //   dir: 'assets/images'
-  // },
-  site: {
-    url: process.env.APP_ORIGIN,
-  },
-  sitemap: {
-    strictNuxtContentPaths: true,
-    exclude: [
-      '/resume_html',
-    ],
-  },
-  delayHydration: {
-    debug: !!process.env.DEV,
-    mode: 'mount',
+  devtools: {
+    enabled: true,
+    timeline: {
+      enabled: true,
+    },
   },
   app: {
     head: {
@@ -52,17 +33,6 @@ export default defineNuxtConfig({
       },
     },
   },
-  content: {
-    highlight: {
-      theme: 'github-dark',
-    },
-  },
-  devtools: {
-    enabled: true,
-    timeline: {
-      enabled: true,
-    },
-  },
   colorMode: {
     preference: 'system', // default value of $colorMode.preference
     fallback: 'light', // fallback value if not system preference found
@@ -73,16 +43,21 @@ export default defineNuxtConfig({
     classSuffix: '',
     storageKey: 'nuxt-color-mode',
   },
-
   runtimeConfig: {
-    appOrigin: process.env.APP_ORIGIN || 'http://localhost:3000',
     chromePath: process.env.CHROME_PATH || undefined,
     public: {
       appDomain: process.env.APP_DOMAIN || 'localhost:3000',
-      email: 'pro@pedraal.dev',
-      phone: '06 51 62 31 35',
+      email: 'pro@pedraal.fr',
+      phone: '06 17 21 19 97',
       github: 'https://github.com/pedraal',
-      linkedin: 'https://www.linkedin.com/in/pierre-golfier-9aa804109/'
+    },
+  },
+  experimental: {
+    asyncContext: true,
+  },
+  eslint: {
+    config: {
+      stylistic: true,
     },
   },
 })

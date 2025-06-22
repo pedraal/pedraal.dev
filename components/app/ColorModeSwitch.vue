@@ -4,9 +4,16 @@ const onClick = () => (colorMode.value === 'light' ? (colorMode.preference = 'da
 </script>
 
 <template>
-  <button aria-label="Color Mode" class="inline-block hover:text-indigo-600" @click="onClick">
+  <button
+    aria-label="Color Mode"
+    class="inline-block hover:text-indigo-600"
+    @click="onClick"
+  >
     <ColorScheme>
-      <Icon :name="colorMode.value === 'dark' ? 'carbon:moon' : 'carbon:sun'" class="h-5 w-5 hover:text-indigo-600" />
+      <Icon
+        :name="colorMode.value === 'dark' ? 'carbon:moon' : 'carbon:sun'"
+        class="h-5 w-5 hover:text-indigo-600"
+      />
     </ColorScheme>
   </button>
 </template>

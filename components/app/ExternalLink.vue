@@ -5,7 +5,11 @@ defineProps<{
 </script>
 
 <template>
-  <a :href="href" target="_blank" class="hover:text-indigo-600">
+  <a
+    :href="href"
+    target="_blank"
+    class="hover:text-indigo-600"
+  >
     <slot />
   </a>
 </template>

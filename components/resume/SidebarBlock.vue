@@ -1,11 +1,11 @@
 <template>
   <div>
     <p class="m-0 font-semibold">
-      <slot name="title"></slot>
+      <slot name="title" />
     </p>
-    <ResumePrimaryDivider></ResumePrimaryDivider>
+    <ResumePrimaryDivider />
     <div class="text-sm">
-      <slot></slot>
+      <slot />
     </div>
   </div>
 </template>

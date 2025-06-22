@@ -6,17 +6,27 @@ const props = defineProps<{
 const { data } = await useAsyncData(`resume-${props.contentPath}`, () => queryContent(`/${props.contentPath}`).find())
 </script>
 
-
 <template>
   <div>
     <p class="text-2xl">
-      <slot name="title"></slot>
+      <slot name="title" />
     </p>
-    <ResumePrimaryDivider></ResumePrimaryDivider>
+    <ResumePrimaryDivider />
     <ul class="list-disc pl-4">
-      <li v-for="item of data" class="my-3">
-        <slot name="item" v-bind="item"></slot>
-      </li>
+      <template
+        v-for="(item, index) of data"
+        :key="index"
+      >
+        <li
+          v-if="item.summary"
+          class="my-3"
+        >
+          <slot
+            name="item"
+            v-bind="item"
+          />
+        </li>
+      </template>
     </ul>
   </div>
 </template>

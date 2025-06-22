@@ -1,0 +1,11 @@
+{
+  "title": "Crisp.chat",
+  "color": "blue",
+  "date": "Avril 2024 - Aujourd'hui",
+  "link": "https://crisp.chat",
+  "role": "Développeur Fullstack",
+  "stack": "Nuxt & Node.js",
+  "summary": "En charge du développement du site crisp.chat et soutien au développement de diverses fonctionnalités sur l'application",
+  "description": "<p>J'ai rejoint l'équipe de Crisp avec pour mission initiale d'implémenter la refonte intégrale du site web de l'entreprise. Pour réaliser ce projet, le framework Nuxt a été choisi pour tirer parti de Vue.js et du rendu côté serveur afin de proposer une expérience utilisateur plus moderne et performante.</p><br><p>Depuis la mise en production du nouveau site, je continue d'y apporter régulièrement des optimisations de performance et de nouvelles formes de contenu, et je participe aussi désormais à divers développements sur les différents micro-services qui constituent l'architecture de l'application, aussi bien front-end que back-end.</p>",
+  "card": "Crisp.chat<br><br>Développeur Fullstack"
+}
